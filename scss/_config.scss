@@ -1,0 +1,76 @@
+/* Fonts */
+$main-font: 'VolvoSansLight';
+$VolvoSans: 'VolvoSans';
+$VolvoSansBold: 'VolvoSansBold';
+
+/* Colors */
+$main-color:#64c29e;
+$title-color:#7e7f80;
+$text-color:#8e9193;
+$light-grey:#F4F4F4;
+$dark-color:#282f35;
+$white:#FFF;
+$digital-blue: #5C92BB;
+$background-color:#003057;
+
+@font-face {
+    font-family: VolvoSansLight;
+    src: url(../fonts/VolvoSansLight.ttf);
+  }
+@font-face {
+    font-family: VolvoSans;
+    src: url(../fonts/VolvoSans.ttf);
+}
+@font-face {
+  font-family: VolvoSansBold;
+  src: url(../fonts/VolvoSans_Bold.ttf);
+}
+@mixin mq($smallerValue,$biggerValue) {
+  @media (min-width: #{$smallerValue}) and (max-width: $biggerValue) {
+        @content;
+      }
+  }    
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: black;
+ }
+
+
+ .button-top:before{
+   @include mq(320px, 500px){
+     display: none;
+   }
+ }
+.btn{
+    display: inline-block;
+    background: transparent;
+    border: 1px solid $main-color;
+    color: $main-color;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 20px;
+    border-radius: 30px;
+    font-family: $main-font;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 20px;
+    line-height: 50px;
+}
+
+
+.answer_show{
+  @include mq(320px,1455px){
+    display: block;
+
+    }
+}
+.answer_hide{
+  @include mq(320px,1455px){
+    display: none;
+
+    }
+}

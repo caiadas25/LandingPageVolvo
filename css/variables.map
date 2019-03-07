@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/variables.css",
+	"sources": [
+		"../scss/variables.scss"
+	],
+	"sourcesContent": [
+		"$icomoon-font-family: \"volvoicons\" !default;\n$icomoon-font-path: \"../fonts\" !default;\n\n$icon-facebook: \"\\e908\";\n$icon-instagram: \"\\e909\";\n$icon-youtube: \"\\e90a\";\n$icon-arrow-right: \"\\e90b\";\n$icon-arrow2-right: \"\\e900\";\n$icon-message: \"\\e901\";\n$icon-call: \"\\e902\";\n$icon-info: \"\\e903\";\n$icon-placeholder: \"\\e904\";\n$icon-steering: \"\\e905\";\n$icon-videoplayer: \"\\e906\";\n$icon-calendar: \"\\e907\";\n\n"
+	],
+	"mappings": "",
+	"names": []
+}

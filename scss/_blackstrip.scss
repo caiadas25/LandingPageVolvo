@@ -1,0 +1,68 @@
+.contactos{
+	width: 100%;
+    background-color: #000000;
+    font-size: 0;
+	.container {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 80%;
+        width: 100%;
+        padding: 100px 0;
+        position: relative;
+        @include mq(501px, 1230px){
+            max-width: 90%;
+            
+        }
+        
+        @include mq(320px,800px){
+            padding: 40px 0 30px 0;
+          }
+
+        i{
+            font-size: 48px;
+            display: inline-block;
+            color: #F4F4F4;
+            @include mq(320px,800px){
+                display: block;
+                font-size: 30px;
+                margin-bottom: 14px;
+            }
+        }
+        h1{
+            color: #F4F4F4;
+            font-family: "VolvoSans";
+            font-size: 18px;
+            line-height: normal;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            display: inline-block;
+            margin-right: 134px;
+            text-align: left;
+            @include mq (911px, 1092px){
+                margin-right: 50px;
+            }
+            @include mq(501px, 910px){
+                margin-right: 15px;
+                margin-left: 10px;
+            }
+            @include mq(501px, 800px){
+                text-align: center;
+            }
+            @include mq(320px,500px){
+                font-size: 16px;
+                text-align: center;      
+                margin-right: unset;
+                margin-left: unset;  
+                margin-bottom: 26px;        
+              }
+
+            &:nth-of-type(2){
+                vertical-align: text-bottom;
+            }
+            &:nth-of-type(3){
+                vertical-align: text-bottom;
+                margin-right: 0px;
+            }
+        }
+    }
+}

@@ -1,0 +1,163 @@
+.footer{
+    position: relative;
+    background-color: $background-color;
+    .center{
+    padding:50px 0 20px 0;
+    position: relative;
+    margin-top:50px; 
+    top: 15%;
+    text-align:center;
+    margin: 0 auto;
+    max-width: 80%;
+    @include mq(320px, 770px){
+        padding: 0;
+        max-width: 90%
+    }
+    .wrap{
+        position: relative;
+        font-size: 0;
+        width: 60%;
+        left: 21%;
+        display: inline-block;
+        vertical-align: middle;
+        @include mq(501px, 1050px){
+            max-width: 50%;
+            left: 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        @include mq(320px, 500px){
+            left: 0;
+            text-align: center;
+             max-width: 80%;
+             margin-top: 40px;
+            }
+        .searchTerm {
+            display: inline-block;
+            padding: 12px;
+            padding-left: 31px;
+            font-size: 22px;
+            color: #fff;
+            background-color: transparent;
+            border: 3px solid #fff;
+            border-radius: 10px;
+            font-family: "VolvoBroad";
+            width: 50%;
+            @include mq(1051px, 1260px){
+                width: 42%;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            @include mq(320px,1050px){
+                width: 100%;
+                font-size: 16px;
+                padding-left: 20px;
+                }
+            }
+          .searchButton { 
+            text-align: center;
+            display: inline-block;
+            background: none;
+            font-family: "VolvoBroad";
+            letter-spacing: 0.1em;
+            color: #fff;
+            cursor: pointer;
+            margin-left: 50px;
+            font-size: 22px;
+            padding: 12px;
+            width: 37%;
+            border: 3px solid #ffffff;
+            border-radius: 10px;
+            @include mq(1051px, 1260px){
+                width: 40%;
+                margin-left: 38px;
+            }
+            @include mq(320px, 1050px){
+                width: 100%;
+                margin-left: 0px;
+                margin-top: 15px;
+                font-size: 16px;
+                letter-spacing: 0.15em;
+                }
+            }   
+        }
+        .icons{
+        display: inline-block;
+        list-style-type:none;
+        text-align: center;
+        position: relative;
+        font-size: 0;
+        right: 69%;
+        vertical-align: middle;
+        @include mq(320px, 1050px){
+            width: 100%;
+            right: 0;
+            margin-top: 43px;
+        }
+        a{
+        font-size: 48px;
+        color: white;
+        text-decoration: none;
+        margin-top: 50px;
+        top: 15%;
+        &:nth-of-type(2){
+            margin-top: 15px;
+            margin-right: 13px;
+            margin-left: 13px;
+            }
+        @include mq(320px, 500px){
+            font-size: 28px;
+            text-align: center;
+            &:nth-of-type(3){
+                margin-right: 0;
+                }
+            }    
+        }
+    }
+        .footer_1{
+            text-align:center;
+            h1{
+                font-family: "VolvoSans";
+                color: $light-grey;
+                display: inline-block;
+                font-size: 18px;
+                vertical-align: middle;
+                margin-right: 100px;
+                margin-top: 78px;
+                &:nth-of-type(3){
+                    margin-right: 0;
+                    }
+                    @include mq(771px, 1050px){
+                        font-size: 15px;
+                    }
+                    @include mq(320px, 1050px){
+                        margin-top: 30px;
+                        font-size: 12px;
+                        margin-right: 26px;
+                        &:nth-of-type(3){
+                            margin-right: 0;
+                            }
+                        }
+                }
+            h2{
+                font-family: "VolvoSans";
+                font-size: 18px;
+                color: $light-grey;
+                margin-top: 50px;
+                letter-spacing: 1px;
+                @include mq(771px, 1050px){
+                    font-size: 15px;
+                    margin-top: 20px;
+                    padding-bottom: 20px;
+                }
+                @include mq(320px,770px){
+                    margin-top: 10px;
+                    font-size: 12px;
+                    line-height: 14px;
+                    padding-bottom: 30px;
+                    }
+                }
+            }
+    }   
+    
+}

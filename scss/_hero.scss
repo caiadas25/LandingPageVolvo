@@ -1,0 +1,221 @@
+
+
+.header{
+	position: fixed;
+    height: 75px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 3;
+	background: linear-gradient(rgb(36, 36, 36), #ffffff00);
+	@include mq(320px,500px){
+		position: absolute;
+	  }
+	img{
+		position: absolute;
+		width: 64px;
+		height: 64px;
+		z-index: 2;
+		left: 40px;
+		top: 40px;
+		@include mq(320px,500px){
+			width: 38px;
+			height: 38px;
+			left: 15px;
+			top: 15px;
+		  }
+	}
+	.nav{
+		margin: 2px auto;
+		left: 176px;
+		top: 59px;
+		position: absolute;
+		@include mq(320px,500px){
+			line-height: 70px;
+			text-align: right;
+			position: unset;
+			margin: 0;
+		  }
+
+		&.open {
+			background-color: #000;
+		}
+
+		& a {
+			text-decoration: none;
+			color:whitesmoke;
+			margin-right: 20px;
+			@include mq(320px,500px){
+				border-top: 1px solid #fff;
+				display: none;
+				margin: 0;
+			}
+		}
+
+		&.open a {
+			@include mq(320px,500px){
+				display: block;
+			}
+		}
+
+		@include mq(320px,500px){
+			.menu-toggle {
+				border-bottom: 2px solid #fff;
+		    	height: 12px;
+		    	width: 24px;
+		    	position: absolute;
+		    	top: 22px;
+    			right: 22px;
+    			transition: all 300ms ease;
+    		}
+
+    		.menu-toggle:before,
+    		.menu-toggle:after {
+    		    transition: all 300ms ease;
+    			content: "";
+    			position: absolute;
+			    left: 0;
+			    height: 2px;
+			    width: 100%;
+			    background-color: #fff;
+    		}
+
+    		.menu-toggle:before {
+				top: 0;
+    		}
+
+    		.menu-toggle:after {
+    			bottom: -12px;
+    		}
+
+    		&.open .menu-toggle {
+    			border-bottom-width: 0; 
+    		}
+    		
+    		&.open .menu-toggle:before {
+			    transform: rotate(-45deg) translateX(-3px) translateY(0px);
+			    content: "";
+			    transform-origin: right;
+    		}
+
+    		&.open .menu-toggle:after {
+    			bottom: -12px;
+    			transform: rotate(45deg) translateX(-4px) translateY(0px);
+    			content: "";
+    			transform-origin: right;
+    		}
+		}
+
+		.menu {
+			display: inline-block;
+			margin-right: 10px;
+			font-family: "VolvoSans";
+			font-size: 16px;
+			text-decoration: none;
+			margin-right: 5px;
+			font-weight: 700;
+			@include mq(320px,500px){
+				text-align: center;
+				width: 100%;
+			}
+		}
+
+		&.open .menu {
+			@include mq(320px,500px){
+				padding-top: 68px;
+				border-bottom: 1px solid #fff;
+			}
+		}
+	}
+}
+
+.hero {
+	padding-bottom: 2px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	overflow: hidden;
+	position: relative;
+	background-color: black;
+	@include mq(320px,500px){
+		height: 100%;
+	  }
+
+	.gallery{
+		max-width: 100%;
+		margin: 0 auto;
+		&:before {
+			content:'';
+			width:100%;
+			height:100%;
+			background: blue;
+			opacity: 0.05;
+			display:block;
+			position:absolute;
+			left:0;
+			top:0;
+			
+			@include mq(320px,500px){
+				content: '';
+				width: 100%;
+				height: 100%;
+				opacity: 0.05;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				@include mq(320px,500px){
+					max-width: 100%;
+					margin: 0 auto;
+				  }
+			  }
+		}
+		img{
+			width: 100%;
+			margin: 0 auto;
+
+
+		}	
+		.gallery-subtitles {
+		width: 100%;
+		position: absolute;
+		top:74%;
+		transform:translate(-50%,-50%);
+		left: 50%;
+		text-align:center;
+		@include mq(320px,500px){
+			width: 100%;
+			position: absolute;
+			top: 69%;
+			transform: translate(-50%, -50%);
+			left: 50%;
+			text-align: center;
+		  }
+		h1 {
+			font-size:96px;
+			font-family:"VolvoBroad";
+			color:$white;
+			margin-top:20px;
+			@include mq(320px,500px){
+				font-size: 64px;
+				font-family: "VolvoBroad";
+				color: #fff;
+			  }
+		}
+		.button-hero{
+			margin: 0 auto;
+			.btn{
+				border: 3px solid #FFFFFF;
+				background-color: none;
+				border-radius: 10px;
+				letter-spacing: 1px;
+				color: $light-grey;	
+				font-size: 36px;
+				font-family: "VolvoBroad";
+				padding: 0 60px 0 60px;
+				}
+			}	 
+		}
+	}
+	}
+
+
