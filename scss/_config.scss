@@ -13,6 +13,15 @@ $white:#FFF;
 $digital-blue: #5C92BB;
 $background-color:#003057;
 
+
+
+@font-face {
+  font-family: VolvoBroad;
+  src: url(../fonts/webfontkit/volvobroad-webfont.woff),
+       url(../fonts/webfontkit/volvobroad-webfont.woff2),
+}
+
+
 @font-face {
   font-family: VolvoSansLight;
   src: url(../fonts/webfontkit/volvosanslight-webfont.ttf),
