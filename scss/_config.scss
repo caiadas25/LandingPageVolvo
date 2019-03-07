@@ -14,16 +14,21 @@ $digital-blue: #5C92BB;
 $background-color:#003057;
 
 @font-face {
-    font-family: VolvoSansLight;
-    src: url(../fonts/VolvoSansLight.ttf);
-  }
+  font-family: VolvoSansLight;
+  src: url(../fonts/webfontkit/volvosanslight-webfont.ttf),
+       url(../fonts/webfontkit/volvosanslight-webfont.woff),
+       url(../fonts/webfontkit/volvosanslight-webfont.woff2);
+}
 @font-face {
-    font-family: VolvoSans;
-    src: url(../fonts/VolvoSans.ttf);
+  font-family: VolvoSans;
+  src: url(../fonts/webfontkit/volvosans-webfont.ttf),
+       url(../fonts/webfontkit/volvosans-webfont.woff),
+       url(../fonts/webfontkit/volvosans-webfont.woff2);
 }
 @font-face {
   font-family: VolvoSansBold;
-  src: url(../fonts/VolvoSans_Bold.ttf);
+  src: url(../fonts/webfontkit/volvosans_bold-webfont.woff),
+       url(../fonts/webfontkit/volvosans_bold-webfont.woff2),
 }
 @mixin mq($smallerValue,$biggerValue) {
   @media (min-width: #{$smallerValue}) and (max-width: $biggerValue) {
