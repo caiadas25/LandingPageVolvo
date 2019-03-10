@@ -139,6 +139,18 @@ $(document).ready(function(){
         
     $(".question").on("click",openAnswer);
 
+    /*Slide Toggle*/
+    $('#expand1').click(function() {
+        $('.expand-item1').slideToggle();
+    });
+    $('#expand2').click(function() {
+        $('.expand-item2').slideToggle();
+    });
+    $('#expand3').click(function() {
+        $('.expand-item3').slideToggle();
+    });
+
+
 }) //end document ready
 
 
